@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="user-regular.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
+        rel="stylesheet">
+<style>
+  section div img {
+    animation: rotate 2s ease-in-out; /* Removed "infinite" */
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  h2 {
+    animation: glow 1s ease-in-out infinite; /* Glow animation remains infinite */
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 2px white, 0 1px 4px rgba(255, 255, 255, 0.5); }
+    to { text-shadow: 0 0 4px white, 0 2px 8px rgba(255, 255, 255, 0.5); }
+  }
+</style>
+
+
+<style>
+  body > img {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+<style>
+  section {
+    animation: slide-in 1s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+</style>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+        }
+
+        body >img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            inset: 0;
+            overflow-y: scroll;
+        }
+        
+        section div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section > div {
+            padding: 100px 10px;
+        }
+
+        section div img {
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 1px lightblue;
+        }
+
+        a {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid white;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            gap: 20px;
+            align-items: center;
+            border-radius: 4px;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        a i {
+            font-size: 1.3em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <img src="2825704.webp" />
+    <section>
+        <div>
+            <img src="https://yt3.ggpht.com/1-_6CaK5py-fb6tf8zEWY26YKEsHv3fSYNj5pyGljB7hzS3FI9M9hjxXY5wrKIlnN0jTWmyDB74=s600-c-k-c0x00ffffff-no-rj-rp-mo" />
+            <h2>NotMonin</h2>
+            <div>
+                <a href="https://youtube.com/@notmonin">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>YouTube</p>
+                </a>
+                <a href="https://discord.com/invite/HuPc4cVT95">
+                    <i class="fa-brands fa-discord"></i>
+                    <p>Discord</p>
+                </a>
+                <a href="https://twitter.com/MoninNot">
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>Twitter</p>
+                <a href="https://github.com/MONiNARCADE">
+                    <i class="fa-brands fa-github"></i>
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
